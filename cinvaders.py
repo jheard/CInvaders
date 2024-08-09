@@ -133,7 +133,7 @@ class CInvaders(tk.Tk):
         self.invaders.clear()
         self.running = True
         self.canvas.delete("lose")
-        self.unbind("<ButtonPress")
+        self.unbind("<ButtonPress>")
         self.after_idle(self.spawner)
         self.after_idle(self.updater)
     
